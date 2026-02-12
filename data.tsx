@@ -21,6 +21,12 @@ export const APP_DATA = {
     painPoint: "Operación manual y baja escalabilidad",
     goal: "Agente de Texto y Voz Automatizado"
   },
+  landing: {
+    title: "Propuesta de Soluciones IA",
+    subtitle: "Preparado exclusivamente para",
+    buttonText: "Iniciar Presentación",
+    footer: "GOBIG AI © 2025"
+  },
   slides: {
     intro: {
       tag: "Propuesta Personalizada",
