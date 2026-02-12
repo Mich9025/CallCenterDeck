@@ -29,7 +29,7 @@ export const APP_DATA = {
   },
   slides: {
     intro: {
-      tag: "Propuesta Personalizada",
+      tag: "",
       greeting: "Hola,",
       welcomePre: "Bienvenida al futuro de",
       description: "En GOBIG AI, hemos diseñado una solución de Agentes de Voz para transformar tu centro de operaciones y escalar tus ventas sin aumentar el estrés operativo.",
@@ -139,7 +139,7 @@ export const APP_DATA = {
       description: (company: string) => `Lina, tenemos el plan perfecto para ${company} dentro del rango B/C. Empecemos con una prueba piloto.`,
       cta: "Agendar Demo",
       features: [
-        "Setup en 48h",
+        "Setup en semanas",
         "Sin costos ocultos",
         "Soporte Local",
         "Cancelación flexible"
