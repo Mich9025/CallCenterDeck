@@ -17,6 +17,7 @@ export enum SlideType {
   TECH_STACK = 'TECH_STACK',
   DEMO = 'DEMO',
   ROI = 'ROI',
+  COST_OF_INACTION = 'COST_OF_INACTION',
   CONTACT = 'CONTACT'
 }
 

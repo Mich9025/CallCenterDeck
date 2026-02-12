@@ -139,6 +139,34 @@ export const APP_DATA = {
       ],
       note: "*Para obtener una cotización exacta adaptada a Llama Colombia, agenda una demo con nosotros."
     },
+    costOfInaction: {
+      title: "El Costo de la Inacción",
+      highlight: "¿Cuánto cuesta no innovar?",
+      description: "Calculado sobre un costo real empresa de $2.782.000 COP (Salario + Prestaciones) por agente:",
+      cards: [
+        {
+          title: "Dinero Desperdiciado",
+          value: "$1.670.000 COP",
+          unit: "Por Agente / Mes",
+          desc: "El 60% del tiempo operativo se pierde en intentos fallidos de llamada. Estás pagando el 60% de tu nómina real sin retorno efectivo.",
+          color: "red"
+        },
+        {
+          title: "Costo de Escalar",
+          value: "+$8.350.000 COP",
+          unit: "Para crecer 50%",
+          desc: "Atender un 50% más de volumen requiere contratar ~3 agentes nuevos. Al sumar la carga prestacional real, el costo fijo se dispara.",
+          color: "orange"
+        },
+        {
+          title: "Rotación de Personal",
+          value: "$4.170.000 COP",
+          unit: "Por reemplazo",
+          desc: "La rotación cuesta ~1.5x el costo mensual real (reclutamiento, curva de aprendizaje y tiempo de gestión perdido).",
+          color: "red"
+        }
+      ]
+    },
     contact: {
       title: "¿Listo para escalar?",
       description: (company: string) => `Lina, tenemos el plan perfecto para ${company}. Empecemos con una prueba piloto.`,

@@ -8,6 +8,7 @@ import SolutionSlide from './components/slides/SolutionSlide';
 import TechStackSlide from './components/slides/TechStackSlide';
 import DemoSlide from './components/slides/DemoSlide';
 import RoiSlide from './components/slides/RoiSlide';
+import CostOfInactionSlide from './components/slides/CostOfInactionSlide';
 import ContactSlide from './components/slides/ContactSlide';
 import { Menu, X, ChevronRight, ChevronLeft, Play } from 'lucide-react';
 
@@ -18,6 +19,7 @@ const SLIDE_ORDER = [
   SlideType.TECH_STACK,
   SlideType.DEMO,
   SlideType.ROI,
+  SlideType.COST_OF_INACTION,
   SlideType.CONTACT
 ];
 
@@ -72,6 +74,7 @@ const App: React.FC = () => {
       case SlideType.TECH_STACK: return <TechStackSlide {...commonProps} />;
       case SlideType.DEMO: return <DemoSlide {...commonProps} />;
       case SlideType.ROI: return <RoiSlide {...commonProps} />;
+      case SlideType.COST_OF_INACTION: return <CostOfInactionSlide {...commonProps} />;
       case SlideType.CONTACT: return <ContactSlide {...commonProps} />;
       default: return <IntroSlide {...commonProps} />;
     }
