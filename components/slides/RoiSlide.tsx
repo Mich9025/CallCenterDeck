@@ -8,7 +8,7 @@ const RoiSlide: React.FC<SlideProps> = () => {
 
   return (
     <div className="flex flex-col h-full justify-center items-center w-full max-w-5xl mx-auto">
-      <div className="text-center mb-10 max-w-2xl">
+      <div className="text-center mb-12 max-w-2xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           {roi.title} <span className="text-gobig-primary">{roi.highlight}</span>
         </h2>
@@ -17,7 +17,7 @@ const RoiSlide: React.FC<SlideProps> = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
         {roi.items.map((item, idx) => (
           <div 
             key={idx} 
@@ -33,18 +33,18 @@ const RoiSlide: React.FC<SlideProps> = () => {
               </div>
             )}
             
-            <h3 className="text-lg font-bold text-gray-300 mb-2">{item.category}</h3>
+            <h3 className="text-xl font-bold text-gray-300 mb-4">{item.category}</h3>
             
-            <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+            <div className="text-4xl md:text-5xl font-bold text-white mb-2">
               {item.value}
             </div>
             
-            <div className="text-sm font-mono text-gobig-secondary mb-6">
+            <div className="text-sm font-mono text-gobig-secondary mb-8">
               {item.unit}
             </div>
             
             <div className="mt-auto pt-6 border-t border-white/5 w-full">
-              <p className="text-sm text-gray-400 leading-relaxed">
+              <p className="text-base text-gray-400 leading-relaxed">
                 {item.detail}
               </p>
             </div>
@@ -52,7 +52,7 @@ const RoiSlide: React.FC<SlideProps> = () => {
         ))}
       </div>
 
-      <div className="mt-10 flex items-center gap-2 text-sm text-gray-500 bg-black/30 px-6 py-3 rounded-full border border-white/5">
+      <div className="mt-12 flex items-center gap-2 text-sm text-gray-500 bg-black/30 px-6 py-3 rounded-full border border-white/5">
         <Info size={16} className="text-gobig-primary" />
         <p>{roi.note}</p>
       </div>

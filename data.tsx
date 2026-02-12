@@ -117,8 +117,8 @@ export const APP_DATA = {
       items: [
         {
           category: "Setup & Onboarding",
-          value: "$900 - $1,500",
-          unit: "USD / Pago Único",
+          value: "A Medida",
+          unit: "Dependiendo de la necesidad",
           detail: "Configuración de agentes, integración CRM y prompts.",
           highlight: false
         },
@@ -128,13 +128,6 @@ export const APP_DATA = {
           unit: "USD / Minuto",
           detail: "Facturación por uso real. Incluye telefonía + IA.",
           highlight: true
-        },
-        {
-          category: "Tech Fee Mensual",
-          value: "$150 - $290",
-          unit: "USD / Mes",
-          detail: "Mantenimiento de infraestructura, reportes y soporte.",
-          highlight: false
         }
       ],
       note: "*Para obtener una cotización exacta adaptada a Llama Colombia, agenda una demo con nosotros."
