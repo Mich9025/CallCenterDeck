@@ -27,12 +27,6 @@ const RoiSlide: React.FC<SlideProps> = () => {
                 : 'bg-gobig-panel/50 border-white/10 hover:border-white/20'
             }`}
           >
-            {item.highlight && (
-              <div className="absolute -top-3 px-4 py-1 bg-gobig-primary text-black text-xs font-bold uppercase tracking-wider rounded-full">
-                Más Popular
-              </div>
-            )}
-            
             <h3 className="text-xl font-bold text-gray-300 mb-4">{item.category}</h3>
             
             <div className="text-4xl md:text-5xl font-bold text-white mb-2">
