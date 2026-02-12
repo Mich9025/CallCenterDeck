@@ -29,7 +29,7 @@ export const APP_DATA = {
   },
   slides: {
     intro: {
-      tag: "",
+      tag: "Propuesta Personalizada",
       greeting: "Hola,",
       welcomePre: "Bienvenida al futuro de",
       description: "En GOBIG AI, hemos diseñado una solución de Agentes de Voz para transformar tu centro de operaciones y escalar tus ventas sin aumentar el estrés operativo.",
@@ -111,32 +111,37 @@ export const APP_DATA = {
       }
     },
     roi: {
-      title: "Proyección de Impacto",
-      highlight: "Mensual",
-      metrics: {
-        currentConversion: 2, // 2% assumed
-        projectedConversion: 5, // 5% target
-        costPerCallHuman: 1.50, // USD
-        costPerCallAI: 0.12, // USD
-        dailyVolume: 200 // Avg of B/C tier
-      },
-      cards: {
-        savings: { label: "Ahorro Operativo Est.", sub: (volume: string) => `Basado en volumen de ${volume}` },
-        leads: { label: "Leads Calificados", value: "+45%", sub: "Por respuesta inmediata 24/7" }
-      },
-      chart: {
-        title: "Comparativa: Costo vs. Resultados",
-        manualLabel: "Manual",
-        aiLabel: "Con IA",
-        manualLeads: 20,
-        manualCost: 100,
-        aiLeads: 45,
-        aiCost: 25
-      }
+      title: "Valores de Referencia",
+      highlight: "Modelo Transparente",
+      description: "Nuestra estructura de costos está diseñada para crecer contigo. Estos son los promedios que manejamos para proyectos similares.",
+      items: [
+        {
+          category: "Setup & Onboarding",
+          value: "$900 - $1,500",
+          unit: "USD / Pago Único",
+          detail: "Configuración de agentes, integración CRM y prompts.",
+          highlight: false
+        },
+        {
+          category: "Consumo por Minuto",
+          value: "$0.14 - $0.20",
+          unit: "USD / Minuto",
+          detail: "Facturación por uso real. Incluye telefonía + IA.",
+          highlight: true
+        },
+        {
+          category: "Tech Fee Mensual",
+          value: "$150 - $290",
+          unit: "USD / Mes",
+          detail: "Mantenimiento de infraestructura, reportes y soporte.",
+          highlight: false
+        }
+      ],
+      note: "*Para obtener una cotización exacta adaptada a Llama Colombia, agenda una demo con nosotros."
     },
     contact: {
       title: "¿Listo para escalar?",
-      description: (company: string) => `Lina, tenemos el plan perfecto para ${company} dentro del rango B/C. Empecemos con una prueba piloto.`,
+      description: (company: string) => `Lina, tenemos el plan perfecto para ${company}. Empecemos con una prueba piloto.`,
       cta: "Agendar Demo",
       features: [
         "Setup en semanas",
